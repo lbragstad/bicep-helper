@@ -1,7 +1,7 @@
 # Authenticate and post response in json
 authenticate () {
 curl -H "$CONTENT_TYPE" -X POST \
-     -d "$REQUEST"
+     -d "$REQUEST" \
      "$ENDPOINT/auth/tokens/" | python -m json.tool
 }
 
