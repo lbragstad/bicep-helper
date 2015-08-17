@@ -8,7 +8,7 @@ curl -H "$CONTENT_TYPE" -X POST \
 # Authenticate and post response headers
 authenticate_post_headers () {
 curl -si -H "$CONTENT_TYPE" -X POST \
-     -d "$REQUEST"
+     -d "$REQUEST" \
      "$ENDPOINT/auth/tokens/"
 }
 
